@@ -496,3 +496,32 @@ transform: translateX(100%);
 .productDescription .container>.row{
   row-gap: 50px;
 }
+
+
+.Contacts .modal-header {
+  justify-content: center;
+  position: relative;
+}
+.Contacts .modal-header .btn-close {
+ margin: 0 !important;
+ position: absolute;
+ right: 14px;
+ top: 14px;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.option {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.option img {
+  width: 50px;
+  height: 50px;
+}
