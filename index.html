@@ -420,6 +420,8 @@
 
       // intent://send?phone=+916354710794&text=Hello%2C%20I%20want%20to%20buy%20-%20%0A%0AProduct%20Name%3A%20MOG%203%20Seater%20Sofa%0AProduct%20Type%3A%20(Velvet%2C%20Indigo%20Blue)%0APrice%3A%20%E2%82%B9%2052%2C088%20#Intent;scheme=smsto;package=com.whatsapp.w4b;action=android.intent.action.SEND;end
 
+
+      intent://send?phone=+916354710794&text=Hello%2C%20I%20want%20to%20buy%20-%20%0A%0AProduct%20Name%3A%20MOG%203%20Seater%20Sofa%0AProduct%20Type%3A%20(Velvet%2C%20Indigo%20Blue)%0APrice%3A%20%E2%82%B9%2052%2C088%20#Intent;scheme=smsto;package=com.whatsapp.w4b;action=android.intent.action.SENDTO;end
     
 
       if (isMobile) {
@@ -437,7 +439,7 @@
           const message = constructWhatsAppMessage();
           const encodedMessage = encodeURIComponent(message);
           window.open(
-            `${businessWhatsAppUrl}${encodedMessage}#Intent;scheme=smsto;package=com.whatsapp.w4b;action=android.intent.action.SEND;end`,
+            `${businessWhatsAppUrl}${encodedMessage}#Intent;scheme=smsto;package=com.whatsapp.w4b;action=android.intent.action.SENDTO;end`,
             "_blank"
           );
         });
